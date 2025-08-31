@@ -1,3 +1,6 @@
+    
+    const audio = document.getElementById('meuAudio');
+    audio.volume = 0.4; // volume inicial (30%)
 
     function normalizar(str){
       return str
@@ -13,8 +16,10 @@
       const out = document.getElementById('resultado');
 
       if (n1 === 'fabiana' && n2 === 'carlos') {
-        out.textContent = 'uma bahiana com molho e um sergipano beiçudo combinam pra caralho❤️';
-      } else {
+        out.textContent = 'uma bahiana com molho e um sergipano beiçudo que combinam pra carai❤️';
+      } else if(n1 === 'carlos' && n2 === 'fabiana'){
+        out.textContent = 'uma bahiana com molho e um sergipano beiçudo que combinam pra carai❤️';
+      }else {
         out.textContent = 'sem graca';
       }
     }
